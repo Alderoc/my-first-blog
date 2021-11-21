@@ -12,19 +12,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
-class SignPage(tk.Frame):
-    def __init__(self, parent, controller):
-        ...
-        path = tk.Text(self, width = 45, height=1)
-        path.insert("end",img_path)
-        path.grid(row=2,column=0)
-        self.path = path
-        ...
-
-    def asking_path(self):
-        ...
-        self.path.delete("1.0","end")
-        self.path.insert("end",img_path)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
